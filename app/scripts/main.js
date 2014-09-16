@@ -1,5 +1,7 @@
 require.config({
 
+    baseUrl: 'scripts',
+
     paths: {
         domReady: '../../bower_components/requirejs-domready/domReady',
         angular: '../../bower_components/angular/angular'
@@ -11,5 +13,5 @@ require.config({
         }
     },
 
-    deps: ['./bootstrap']
+    deps: ['bootstrap']
 });

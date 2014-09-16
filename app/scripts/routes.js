@@ -15,5 +15,7 @@ define(['./app'], function (app) {
         $routeProvider.otherwise({
             redirectTo: '/view1'
         });
+
+        console.log('routeProvider is running');
     }]);
 });
