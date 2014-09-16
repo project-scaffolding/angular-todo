@@ -1,29 +1,7 @@
-'use strict';
-
-/**
- * @ngdoc overview
- * @name angularTodoApp
- * @description
- * # angularTodoApp
- *
- * Main module of the application.
- */
-angular
-  .module('angularTodoApp', [
-    'ngResource',
-    'ngRoute'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+define([
+     'angular'
+ ], function (ng) {
+     'use strict';
+ 
+     return ng.module('app', []);
+});

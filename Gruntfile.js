@@ -145,6 +145,17 @@ module.exports = function (grunt) {
       server: '.tmp'
     },
 
+    requirejs: {
+      dist: {
+        options: {
+          baseUrl        : '<%= yeoman.app %>/scripts/',
+          name           : 'main',
+          mainConfigFile : '<%= yeoman.app %>/scripts/main.js',
+          out            : '.tmp/concat/scripts/main.js'
+        }
+      }
+    },
+
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
@@ -423,6 +434,7 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
+    'requirejs:dist',
     'ngAnnotate',
     'copy:dist',
     'cdnify',
