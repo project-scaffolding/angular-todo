@@ -1,8 +1,17 @@
 define([
-    'angular'
-], function (ng) {
+    'angular',
+    'constants',
+    'angularRoute'
+], function (angular, constants) {
     'use strict';
 
-    console.log('app is running');
-    return ng.module('app', []);
+    var app;
+
+    app = angular.module('app', ['ngRoute']);
+
+    app.run(['$rootScope', function ($rootScope) {
+        $rootScope.ROUTES = constants.ROUTES;
+    }]);
+
+    return app;
 });

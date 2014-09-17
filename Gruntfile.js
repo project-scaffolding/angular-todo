@@ -146,16 +146,6 @@ module.exports = function (grunt) {
             server: '.tmp'
         },
 
-        // requirejs: {
-        //     dist: {
-        //         options: {
-        //             baseUrl        : '<%= yeoman.app %>/scripts/',
-        //             name           : 'main',
-        //             mainConfigFile : '<%= yeoman.app %>/scripts/main.js',
-        //             out            : '.tmp/concat/scripts/main.js'
-        //         }
-        //     }
-        // },
         requirejs: {
             dist: {
                 options: {
